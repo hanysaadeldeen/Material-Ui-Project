@@ -3,7 +3,7 @@
 # material Project Ready for Mobile and Web 
 
 ## Overview:
-Project Name is a responsive and modern web application built with Material-UI, a popular React component library. This project aims to provide a clean and elegant user interface.
+Material is a responsive and modern web application built with Material-UI, a popular React component library. This project aims to provide a clean and elegant user interface.
 With a focus on usability and aesthetics, it utilizes Material-UI to ensure consistency and a smooth user experience across all devices.
 
 ## Features:
