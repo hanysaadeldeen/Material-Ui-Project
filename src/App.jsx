@@ -1,14 +1,23 @@
-import { Typography } from '@mui/material'
 
+
+import { Box, Stack } from "@mui/material"
+import Feed from "./components/Feed"
+import Sidebar from "./components/Sidebar"
+import AhaBar from "./components/Ahabar"
+import Navbar from "./components/Navbar"
 function App() {
 
   return (
-    <>
-      <Typography variant='h2'>
-        Hello There welcome to my project
-      </Typography>
-      <h1> hany moahemd </h1>
-    </>
+    <Box>
+      <Navbar />
+      <Stack justifyContent={"space-between"} direction={"row"} sx={{ gap: "20px" }}>
+        <Sidebar />
+        <Feed />
+        <AhaBar />
+      </Stack>
+      {/* <Footer /> */}
+
+    </Box>
   )
 }
 
