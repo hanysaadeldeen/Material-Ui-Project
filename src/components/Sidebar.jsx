@@ -28,33 +28,37 @@ const Sidebar = () => {
                     sm: "block"
                 }
             }}>
-            <List>
-                {
-                    items.map(item => {
-                        return (
-                            <ListItem key={item.text} disablePadding>
-                                <ListItemButton component="a" href={item.href}
-                                >
-                                    <ListItemIcon>
-                                        {item.icon}
-                                    </ListItemIcon>
-                                    <ListItemText primary={item.text} />
-                                </ListItemButton>
-                            </ListItem>
-                        )
-                    })
-                }
-                <ListItem disablePadding>
-                    <ListItemButton
-                    >
-                        <ListItemIcon>
-                            <NightlightIcon />
-                        </ListItemIcon>
-                        <Switch />
-                    </ListItemButton>
-                </ListItem>
-            </List>
+            <Box
+                position="fixed"
+            >
+                <List>
+                    {
+                        items.map(item => {
+                            return (
+                                <ListItem key={item.text} disablePadding>
+                                    <ListItemButton component="a" href={item.href}
+                                    >
+                                        <ListItemIcon>
+                                            {item.icon}
+                                        </ListItemIcon>
+                                        <ListItemText primary={item.text} />
+                                    </ListItemButton>
+                                </ListItem>
+                            )
+                        })
+                    }
+                    <ListItem disablePadding>
+                        <ListItemButton
+                        >
+                            <ListItemIcon>
+                                <NightlightIcon />
+                            </ListItemIcon>
+                            <Switch />
+                        </ListItemButton>
+                    </ListItem>
+                </List>
 
+            </Box>
         </Box>
     )
 }
