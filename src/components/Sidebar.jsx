@@ -7,7 +7,7 @@ import MenuBookRoundedIcon from '@mui/icons-material/MenuBookRounded';
 import GroupRoundedIcon from '@mui/icons-material/GroupRounded';
 import StorefrontRoundedIcon from '@mui/icons-material/StorefrontRounded';
 import NightlightIcon from '@mui/icons-material/Nightlight';
-const Sidebar = () => {
+const Sidebar = ({ mode, setMode }) => {
 
     const items = [
         { text: 'Home', href: "/", icon: <HomeIcon /> },
@@ -53,7 +53,8 @@ const Sidebar = () => {
                             <ListItemIcon>
                                 <NightlightIcon />
                             </ListItemIcon>
-                            <Switch />
+                            <Switch onChange={() => setMode(mode === "light" ? "dark" : "light")} color="primary" />
+
                         </ListItemButton>
                     </ListItem>
                 </List>

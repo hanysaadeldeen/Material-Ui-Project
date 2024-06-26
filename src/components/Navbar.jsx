@@ -70,7 +70,7 @@ const Navbar = () => {
                     }} />
 
                 <Search>
-                    <InputBase sx={{ width: "100%" }} placeholder="Search" />
+                    <InputBase sx={{ width: "100%", color: "black" }} placeholder="Search" />
                 </Search>
                 <Icons>
                     <Badge
