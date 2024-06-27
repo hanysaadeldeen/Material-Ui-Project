@@ -98,7 +98,7 @@ const Navbar = () => {
                         sx={{ width: 35, height: 35 }} src="https://mui.com/static/images/avatar/1.jpg"
                         onClick={() => setOpen(!open)}
                     />
-                    <Typography sx={{ display: { sm: "none" } }} variant="span">Hany</Typography>
+                    <Typography sx={{ display: { sm: "none" } }} variant="span">Hany </Typography>
                 </Icons>
             </StyledToolbar>
 
